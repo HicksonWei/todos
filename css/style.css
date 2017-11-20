@@ -1,0 +1,231 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Remove the outer glow in Webkit */
+input:focus
+{
+	outline:0;
+}
+input{
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+
+body{
+    background-image: url('../img/wood.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+.wrap{
+    max-width: 700px;
+    margin: 150px auto;
+    font-family: 'Microsoft JhengHei', sans-serif;
+}
+
+
+.container{
+    min-height: 250px;
+    background-color: rgb(119, 78, 40);
+    padding: 5%; 
+    border-radius: 25px;
+}
+
+.content h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+    color: rgb(248, 184, 124);
+    text-shadow: 2px 2px 2px #000;
+} 
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.enter{
+    margin: 30px 0;
+}
+
+.text{
+    height: 56px;
+    width: 78%;
+    margin-right: 2%;
+    font-family: 'Microsoft JhengHei', sans-serif;
+    display: block;
+    float: left;
+    padding: 10px;
+    font-size: 2rem;
+    background-color: #DD9047;
+    border-radius: 15px 0 0 15px;
+}
+
+.text:focus{
+    background-color: rgb(238, 174, 119)
+}
+
+.btn{
+    height: 56px;
+    width: 20%;
+    font-family: 'Microsoft JhengHei', sans-serif;
+    display: block;
+    float: left;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #000; 
+    border-radius: 0 15px 15px 0;
+    font-weight: bold;
+}
+
+.list li{
+    line-height: 32px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.list li span{
+    width: 32px;
+    height: 32px;
+    color: green;
+    background-color: #fff;
+}
+
+.list li a{
+    font-family: 'FontAwesome';
+    font-size: 32px;
+    text-decoration: none;
+    color: rgb(243, 89, 89);
+}
+
+.delete{
+    text-decoration: none;
+    flex: 8;
+    word-break: break-all;
+    color: rgb(248, 184, 124);
+    font-size: 2rem;
+}
+
+.check{
+    flex: 1;
+    height: 32px;
+    margin-right: 5px;
+}
+
+.cancel{
+    flex: 1;
+    height: 32px;
+    text-align: right;
+}
+
+.footer{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.footer input[type='button']{
+    display: block;
+    cursor: pointer;
+    height: 40px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 50px;
+
+}
+
+
+.all{
+    width: 50px;
+    background-color: #774E28;
+    color: #fff;
+}
+
+.active{
+    width: 150px;
+    margin-left: auto;
+    background-color: #774E28;
+    color: #fff;
+}
+
+.completed{
+    width: 150px;
+    background-color: #774E28;
+    color: #fff;
+}
+
+.on:hover{
+    background-color: #DD9047;
+}
+
+.off{
+    color: #000;
+}
