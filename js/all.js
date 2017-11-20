@@ -48,6 +48,14 @@ enter.addEventListener('keypress', enterList, false);
 
 // ↑↑↑ --- todos addition, update localStorage --- ↑↑↑
 
+window.addEventListener('pageshow', function () {
+    if (this.innerWidth < 400) {
+        add.value = '+';
+    } else {
+        add.value = 'add';
+    }
+}, false);
+
 window.addEventListener('resize', function () {
     if (this.innerWidth < 400) {
         add.value = '+';

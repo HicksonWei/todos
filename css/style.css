@@ -176,7 +176,7 @@ body{
 .check{
     flex: 1;
     height: 32px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .cancel{
